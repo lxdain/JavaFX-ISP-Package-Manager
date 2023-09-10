@@ -106,6 +106,15 @@ public class InternetPackage {
         this.contractDuration = contractDuration;
     }
 
+    public void copyFrom(InternetPackage other) {
+        this.firstName = other.firstName;
+        this.lastName = other.lastName;
+        this.address = other.address;
+        this.speed = other.speed;
+        this.bandwidth = other.bandwidth;
+        this.contractDuration = other.contractDuration;
+    }
+
     @Override
     public String toString() {
         return "InternetPackage{" +
