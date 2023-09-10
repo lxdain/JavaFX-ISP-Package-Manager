@@ -46,15 +46,6 @@ public class Controller {
     }
 
     private void initializeTableView() {
-        // The duplicate columns error
-        TableColumn<InternetPackage, String> firstNameColumn = createTableColumn("First Name", "firstName");
-        TableColumn<InternetPackage, String> lastNameColumn = createTableColumn("Last Name", "lastName");
-        TableColumn<InternetPackage, String> addressColumn = createTableColumn("Address", "address");
-        TableColumn<InternetPackage, String> durationColumn = createTableColumn("Contract Duration", "duration");
-        TableColumn<InternetPackage, String> speedColumn = createTableColumn("Speed", "speed");
-        TableColumn<InternetPackage, String> bandwidthColumn = createTableColumn("Bandwidth", "bandwidth");
-
-        tableView.getColumns().addAll(firstNameColumn, lastNameColumn, addressColumn, durationColumn, speedColumn, bandwidthColumn);
         tableView.getColumns();
         tableView.setItems(packageList);
     }
